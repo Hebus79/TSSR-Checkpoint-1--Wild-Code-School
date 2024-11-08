@@ -29,9 +29,13 @@ git merge test_valide
 5) Donne la(les) ligne(s) de commande(s) bash pour afficher le texte suivant :
 
 echo 'Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :
+
 - "Bonjour est-ce que ce clavier fonctionne bien ?"
+  
 - "Evidemment ! On peut tout écrire avec, que ce soit des pipe | ou bien des backslash \\ !"
+  
 - "Même des tildes ~ ?"
+  
 - "Evidemment !"'
 
 
@@ -48,11 +52,15 @@ les routeurs sont sur la couche 3, ils fonctionnent avec les adresses IP
 8) Quels sont les équivalent PowerShell des commandes bash cd, cp, mkdir, ls.
 
    cd => set-location
+   
    cp => copy-item
+   
    mkdir => New-Item
+   
    ls => Get-ChildItem
+   
 
-9)  Dans la trame ethernet, qu'est-ce que le payload ?
+10)  Dans la trame ethernet, qu'est-ce que le payload ?
 
     Le payload est ce qui contient les DATA (données IP, ARP, ...)
   
