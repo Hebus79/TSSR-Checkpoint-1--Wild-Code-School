@@ -6,6 +6,7 @@ Affichage des disques sur le système :
     fdisk -l
 
 2 disques /dev/sda et /dev/sdb
+
 /dev/sdb contient 3 partitions dont une d'amorçage et le swap. C'est le disque système.
 
 La création et le formatage des partitions doit se faire sur /dev/sda
@@ -35,9 +36,13 @@ Création de la partition pour le swap :
     fdisk /dev/sda
     
 taper m pour obtenir de l'aide
+
 n pour une nouvelle partition
+
 p pour partition primaire
+
 2 pour numéro de partition
+
 valeur par défaut pour les secteurs
 
 puis on change le type de partition de Linux vers Swap grace à "t", "L" pour afficher tous les codes puis "82" pour "fichier d'échange"
@@ -47,7 +52,8 @@ Taper W pour sortir et écrire la table de partition
 
 
 Formatage de la partition Swap:
-swapon
+
+
     mkswap /dev/sda2
     cfdisk (pour vérifier que tout s'est bien passé)
     
@@ -61,6 +67,7 @@ Activation du Swap :
 Montage de la partition DATA
 
 Création du repertoire de montage
+
     mkdir /mnt/data
     mount -t ext4 /dev/sda1 /mnt/data
 
@@ -83,12 +90,28 @@ Pour activer le nouveau Swap, ajouter le UUID de /dev/sda2 dans fstab
 
 
 --------------------------
+
 Images de la solution :
 
+Affichage de cfdisk après formatage des partitions
+![Image](cfdisk.png)
 
-![Image](/Images/0-Configuration%20adresse%20IP%20fixe%20pour%20le%20serveur%20DHCP.png)
+Vérification du montage de la partition DATA
 
-![Image](https://drive.google.com/thumbnail?id=12fye1CKaDPv57CcqsqnG99A6VOhPyen3&sz=w1000 "Tableau Miro")
+![Image](Verif_montage_DATA.png)
+
+
+Vérification de l'activation du Swap
+
+![Image](swapon-s.png)
+
+Fichier fstab
+
+![Image](Edition de fstab.png)
+
+
+
+
 
 
 
