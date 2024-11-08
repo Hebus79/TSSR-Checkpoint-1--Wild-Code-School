@@ -5,46 +5,51 @@ echo "utilisateurs à créer : $@"
 
 #Déclaration variables
 
-i=1
+let i=0
 
-function creation_nouvel_utilisateur() {
+
+if [ $# -eq 0 ] ; then
+
+
+    echo "Il manque les noms d'utilisateurs en argument - Fin du script"
+    exit
+
+
+else
 
     while [ $i -le $# ]; do 
 
+    echo "Création utilisateur $1"
+    sleep 2  
+
         
-        if getent passwd $i > /dev/null 2>&1; then
-            echo "L'utilisateur $i existe déjà."
+        if getent passwd $1 > /dev/null 2>&1; then
+            echo "L'utilisateur $1 existe déjà."
 	        sleep 2
-            "L'utilisateur $i existe déjà"
-            return 1
+            "L'utilisateur $1 existe déjà"
+            sleep 2
+        
         else
-            sudo -S useradd -m $i
-            echo "Utilisateur $i créé."
+            sudo -S useradd -m $1
+            echo "Utilisateur $1 créé."
 	        sleep 2
-            return 0
+            echo "Vérification si l'utilisateur à bien été créé"
+            getent passwd $1
+            # "Vérification si l'utilisateur à bien été créé"
+            # if getent passwd $1 > /dev/null 2>&0; then 
+            # echo "Erreur à la création de l'utilisateur $1"
+            # fi
         fi
 
-        let $[ i+=1 ]
+        let i=$i+1
         
+        shift
+
 
     done
-
-    }
-
-# Teste si le script à des arguments
-
-if [ "$#" -eq "0" ] ; then
-
-
-echo "Il manque les noms d'utilisateurs en argument - Fin du script"
-exit
 
 
 fi
 
-creation_nouvel_utilisateur
-
-
-#sortie du script après création des utilisateurs
 
 echo "Au revoir"
