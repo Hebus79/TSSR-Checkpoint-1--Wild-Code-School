@@ -26,7 +26,7 @@ git checkou main
 git merge test_valide
 
 
-5) Donne la(les) ligne(s) de commande(s) bash pour afficher le texte suivant :
+5) Donne la(les) ligne(s) de commande(s) bash pour afficher le texte suivant : taper echo et mettre le texte entre des apostrophes
 
 echo 'Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :
 
