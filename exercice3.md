@@ -22,7 +22,8 @@ Pour indiquer à Git qu'il doit ignorer certains fichiers lors d'un git push, il
 
 4) Quelles commandes git utiliser pour fusionner les branches main et test_valide ?
 
-git checkou main
+git checkout main
+
 git merge test_valide
 
 
@@ -62,7 +63,7 @@ les routeurs sont sur la couche 3, ils fonctionnent avec les adresses IP
 
 10)  Dans la trame ethernet, qu'est-ce que le payload ?
 
-    Le payload est ce qui contient les DATA (données IP, ARP, ...)
+Le payload est le bloc d'octets qui contient les DATA (données IP, ARP, ...)
   
    
 10. Pourquoi les classes IP sont remplacées par le CIDR ?
