@@ -18,11 +18,12 @@ chmod 744 myfile
 
 3) Comment faire pour que les fichiers pdf d'un dépôt local git ne soient pas pris en compte lors d'un git push ?
 
-Je ne sais pas
+Pour indiquer à Git qu'il doit ignorer certains fichiers lors d'un git push, il est nécessaire de créer et maintenir un fichier nommé ".gitignore" dans le répertoire du projet.
 
 4) Quelles commandes git utiliser pour fusionner les branches main et test_valide ?
 
-git merge
+git checkou main
+git merge test_valide
 
 
 5) Donne la(les) ligne(s) de commande(s) bash pour afficher le texte suivant :
@@ -32,8 +33,6 @@ echo 'Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :
 - "Evidemment ! On peut tout écrire avec, que ce soit des pipe | ou bien des backslash \\ !"
 - "Même des tildes ~ ?"
 - "Evidemment !"'
-
-
 
 
 6) Quelle commande te permet de mettre en avant le processus gedit ?
@@ -55,13 +54,13 @@ les routeurs sont sur la couche 3, ils fonctionnent avec les adresses IP
 
 9)  Dans la trame ethernet, qu'est-ce que le payload ?
 
-    ce qui contient les données
+    Le payload est ce qui contient les DATA (données IP, ARP, ...)
   
    
 10. Pourquoi les classes IP sont remplacées par le CIDR ?
 
 
-    CIDR facilite le découpage en sous-réseaux
+    le CIDR permet d'organiser facilement les adresses IP dans des sous-réseaux
 
 
 
