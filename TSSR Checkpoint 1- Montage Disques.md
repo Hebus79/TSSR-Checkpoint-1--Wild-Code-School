@@ -107,7 +107,7 @@ Vérification de l'activation du Swap
 
 Fichier fstab
 
-![Image](Edition de fstab.png)
+![Image](Edition_de_fstab.png)
 
 
 
