@@ -16,7 +16,7 @@ cut -d: -f1 /etc/passwd
 chmod 744 myfile
 
 
-3)Comment faire pour que les fichiers pdf d'un dépôt local git ne soient pas pris en compte lors d'un git push ?
+3) Comment faire pour que les fichiers pdf d'un dépôt local git ne soient pas pris en compte lors d'un git push ?
 
 Je ne sais pas
 
@@ -25,7 +25,7 @@ Je ne sais pas
 git merge
 
 
-5 Donne la(les) ligne(s) de commande(s) bash pour afficher le texte suivant :
+5) Donne la(les) ligne(s) de commande(s) bash pour afficher le texte suivant :
 
 echo 'Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :
 - "Bonjour est-ce que ce clavier fonctionne bien ?"
@@ -36,12 +36,32 @@ echo 'Malgré le prix élevé de 100$, il a dit "Bonjour !" au vendeur :
 
 
 
-Quelle commande te permet de mettre en avant le processus gedit ?
+6) Quelle commande te permet de mettre en avant le processus gedit ?
 
 ps -ef | grep gedit
 
 
-7. Quels matériels réseaux sont sur la couche 2 et la couche 3 du modèle OSI ? Donne leurs spécificités.
+7) Quels matériels réseaux sont sur la couche 2 et la couche 3 du modèle OSI ? Donne leurs spécificités.
+
+les commutateurs sont sur la couche 2, ils fonctionnent avec les adresses MAC
+les routeurs sont sur la couche 3, ils fonctionnent avec les adresses IP
+
+8) Quels sont les équivalent PowerShell des commandes bash cd, cp, mkdir, ls.
+
+   cd => set-location
+   cp => copy-item
+   mkdir => New-Item
+   ls => Get-ChildItem
+
+9)  Dans la trame ethernet, qu'est-ce que le payload ?
+
+    ce qui contient les données
+  
+   
+10. Pourquoi les classes IP sont remplacées par le CIDR ?
+
+
+    CIDR facilite le découpage en sous-réseaux
 
 
 
